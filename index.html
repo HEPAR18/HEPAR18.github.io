@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<title>HEPAR-18</title>
+	
+<style type="text/css">
+
+body {
+	background-color: #FFFFFF;
+}
+
+body,th {
+	font-family: "Times New Roman", Times, serif;
+	color: #000000;
+}
+
+
+</style>
+</head>
+
+<body>
+	
+	
+	
+	
+	
+<tr>
+    <td><h1><strong><font size="7">HCC prognostic prediction model "HEPAR-18"</font></strong></h1></td>
+</tr>
+
+<hr align="center" size="3" noshade="noshade" color="#000000" />
+
+	
+
+<p><strong><font size="5">This predictive model is referred to as HEPAR-18. The data used to construct the model was derived from TCGA-LIHC, and the candidate model genes were from 'malignant gene set (MGS)'(Fan Z et al.). The model contains a total of 18 genes, namely ZNF239, MARCKSL1, FBXL7, MEX3A, CLEC3B, STC2, PGF, INF2, UCK2, SLC7A11, AKR1B15, SLC1A5, C16orf54, IMPDH1, GTDC1, GRM8, EID3, SIDT1. The corresponding risk score can be obtained by inputting the normalized expression level of model genes. For TCGA-LIHC data, risk score≤0.488 was considered to be a low-risk group, and risk score>0.488 was considered to be a high-risk group. For the prognostic trends of the two groups, see Fig. 8G(Fan Z et al.). Users can compare the expression level of model genes in their own data with that of model genes in TCGA-LIHC data for reference thresholds. For example, A1~A18 represents the expression level of model genes in your data, B1~B18 represents the expression level of model genes in TCGA-LIHC data, k=ΣAi/ΣBi, Ci=Ai/k (i=1...18), where Ci is a standardized value that can be used to fill in the table below.
+</font></strong></p>
+	
+
+   
+<p>&nbsp;	</p>
+	
+<p align="center"><strong><font size="5" class="5">Please fill in all the fields and click the Submit.</font></strong></p>	
+
+<form id="myform" name="myform" method="post">
+	
+<table width="400" border="4" cellpadding="6" cellspacing="4" align="center" bordercolor="#000000" bgcolor="#A8DADC">
+	    
+  <tbody>
+    
+	  
+    <tr>
+      <td><strong>ZNF239</strong></td>
+      <td><input type="Text" name="ZNF239" id="ZNF239" size="30" maxlength="8" align="middle"></td>
+    </tr>
+	  
+	  
+    <tr>
+      <td><strong>MARCKSL1</strong></td>
+      <td><input type="Text" name="MARCKSL1" id="MARCKSL1" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>FBXL7</strong></td>
+      <td><input type="Text" name="FBXL7" id="FBXL7" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>MEX3A</strong></td>
+      <td><input type="Text" name="MEX3A" id="MEX3A" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>CLEC3B</strong></td>
+      <td><input type="Text" name="CLEC3B" id="CLEC3B" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>STC2</strong></td>
+      <td><input type="Text" name="STC2" id="STC2" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>PGF</strong></td>
+      <td><input type="Text" name="PGF" id="PGF" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>INF2</strong></td>
+      <td><input type="Text" name="INF2" id="INF2" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>UCK2</strong></td>
+      <td><input type="Text" name="UCK2" id="UCK2" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>SLC7A11</strong></td>
+      <td><input type="Text" name="SLC7A11" id="SLC7A11" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>AKR1B15</strong></td>
+      <td><input type="Text" name="AKR1B15" id="AKR1B15" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>SLC1A5</strong></td>
+      <td><input type="Text" name="SLC1A5" id="SLC1A5" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>C16orf54</strong></td>
+      <td><input type="Text" name="C16orf54" id="C16orf54" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>IMPDH1</strong></td>
+      <td><input type="Text" name="IMPDH1" id="IMPDH1" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>GTDC1</strong></td>
+      <td><input type="Text" name="GTDC1" id="GTDC1" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>GRM8</strong></td>
+      <td><input type="Text" name="GRM8" id="GRM8" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>EID3</strong></td>
+      <td><input type="Text" name="EID3" id="EID3" size="30" maxlength="8" align="MIDDLE"></td>
+    </tr>
+	  
+	   <tr>
+      <td><strong>SIDT1</strong></td>
+      <td><input type="Text" name="SIDT1" id="SIDT1" size="30" maxlength="8" align="MIDDLE"></td>
+	  </tr>
+	  
+      <tr align="center">
+      <td colspan="2">
+		<input type="button" align="middle" name="submit" id="submit" value=" Submit " onClick="compute('submit')" style="width:100px;height:40px;font-size:20px;background-color: #E2E6E6;font-weight:bold;"  >																									
+       </td>
+      </tr>
+	  
+    <tr>
+      <td><strong>Risk Score</strong></td>
+      <td><input type="text" name="txtResult" id="txtResult" size="30"></td>
+    </tr>
+	  
+  </tbody>
+			
+</table>
+	
+</form>
+
+
+
+<p>&nbsp;	</p>
+<p>&nbsp;	</p>
+
+	
+<p><strong><font size="3" class="5">Please cite: Fan Z et al. From clinical variables to multiomics analysis: a margin morphology-based gross classification system for hepatocellular carcinoma stratification. Gut. 2023 Nov;72(11):2149-2163. doi: 10.1136/gutjnl-2023-330461. </font></strong></p>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<script>
+	function compute(obj){
+		
+		var ZNF239,MARCKSL1,FBXL7,MEX3A,CLEC3B,STC2,PGF,INF2,UCK2,SLC7A11,AKR1B15,SLC1A5,C16orf54,IMPDH1,GTDC1,GRM8,EID3,SIDT1,result;
+		
+		ZNF239 = parseFloat(document.myform.ZNF239.value);
+		
+		MARCKSL1 = parseFloat(document.myform.MARCKSL1.value);
+		
+		FBXL7 = parseFloat(document.myform.FBXL7.value);
+		
+		MEX3A = parseFloat(document.myform.MEX3A.value);
+		
+		CLEC3B = parseFloat(document.myform.CLEC3B.value);
+		
+		STC2 = parseFloat(document.myform.STC2.value);
+		
+		PGF = parseFloat(document.myform.PGF.value);
+		
+		INF2 = parseFloat(document.myform.INF2.value);
+		
+		UCK2 = parseFloat(document.myform.UCK2.value);
+		
+		SLC7A11 = parseFloat(document.myform.SLC7A11.value);
+		
+		AKR1B15 = parseFloat(document.myform.AKR1B15.value);
+		
+		SLC1A5 = parseFloat(document.myform.SLC1A5.value);
+		
+		C16orf54 = parseFloat(document.myform.C16orf54.value);
+		
+		IMPDH1 = parseFloat(document.myform.IMPDH1.value);
+		
+		GTDC1 = parseFloat(document.myform.GTDC1.value);
+		
+		GRM8 = parseFloat(document.myform.GRM8.value);
+		
+		EID3 = parseFloat(document.myform.EID3.value);
+		
+		SIDT1 = parseFloat(document.myform.SIDT1.value);
+		
+		switch(obj){
+				
+		case"submit":					
+		
+		result=ZNF239*0.087143079878641+MARCKSL1*0.00823913232319302+FBXL7*0.0836196489990826+MEX3A*0.0712266323500545-CLEC3B*0.213116421104658+STC2*0.0258233700251821+PGF*0.0286087719639177+INF2*0.031401171178385+UCK2*0.112959299465283+SLC7A11*0.0750721405011465+AKR1B15*0.0725409963566454+SLC1A5*0.0329840252720891-C16orf54*0.0920302830544+IMPDH1*0.0243764678731191+GTDC1*0.282173705777644+GRM8*0.039237577+EID3*0.0647922990517213-SIDT1*0.201341466611887
+		break;
+				
+        }
+		
+		document.myform.txtResult.value = result;
+	}
+	</script>
+
+
+</body>
+</html>
